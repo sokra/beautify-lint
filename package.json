@@ -1,0 +1,41 @@
+{
+  "name": "beautify-lint",
+  "version": "1.0.0",
+  "description": "A linter for code styling. Ensures code is written in a beautiful way.",
+  "main": "lib/beautify-lint.js",
+  "scripts": {
+    "beautify": "node bin/beautify-rewrite bin/*.js lib/*.js",
+    "beautify-lint": "node bin/beautify-lint bin/*.js lib/*.js",
+    "lint": "eslint bin lib",
+    "test": "npm run lint && npm run beautify-lint"
+  },
+  "bin": {
+    "beautify-lint": "bin/beautify-lint",
+    "beautify-rewrite": "bin/beautify-rewrite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sokra/beautify-lint.git"
+  },
+  "keywords": [
+    "lint",
+    "jsbeautify",
+    "beautify"
+  ],
+  "author": "Tobias Koppers @sokra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sokra/beautify-lint/issues"
+  },
+  "homepage": "https://github.com/sokra/beautify-lint#readme",
+  "dependencies": {
+    "async": "^1.5.0",
+    "diff": "^2.2.1",
+    "glob": "^6.0.1",
+    "js-beautify": "^1.5.10"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.1",
+    "eslint-plugin-nodeca": "^1.0.3"
+  }
+}
