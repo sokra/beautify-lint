@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var forEachBeautifiedFile = require("../lib/forEachBeautifiedFile");
 var fs = require("fs");
 var path = require("path");

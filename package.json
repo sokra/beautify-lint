@@ -10,8 +10,8 @@
     "test": "npm run lint && npm run beautify-lint"
   },
   "bin": {
-    "beautify-lint": "bin/beautify-lint.js",
-    "beautify-rewrite": "bin/beautify-rewrite.js"
+    "beautify-lint": "./bin/beautify-lint.js",
+    "beautify-rewrite": "./bin/beautify-rewrite.js"
   },
   "repository": {
     "type": "git",
