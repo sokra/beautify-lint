@@ -1,6 +1,6 @@
 {
   "name": "beautify-lint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A linter for code styling. Ensures code is written in a beautiful way.",
   "main": "lib/beautify-lint.js",
   "scripts": {
